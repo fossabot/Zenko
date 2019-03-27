@@ -20,7 +20,14 @@ if [ "$?" -ne "0" ]; then
 fi
 
 # Run the tests
-enter_and_run python_tests "./run.sh $PYTHON_ARGS"
-enter_and_run node_tests "npm_chain.sh test_crr test_api test_crr_pause_resume test_location_quota test_bucket_get_v2"
+echo "Running test stage: $STAGE"
+if [ "$STAGE" != 'node-tests' ]; then
+    echo "Starting python tests"
+    enter_and_run python_tests "./run.sh $PYTHON_ARGS"
+fi
+if [ "$STAGE" != 'python-tests' ]; then
+    echo "Starting node tests"
+    enter_and_run node_tests "npm_chain.sh test_crr test_api test_crr_pause_resume test_location_quota test_bucket_get_v2"
+fi
 
 exit "$EXIT_STATUS"
