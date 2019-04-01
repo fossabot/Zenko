@@ -19,7 +19,7 @@ metadata:
     name: aws-mock
 spec:
   initContainers:
-  - image: zenko/cloudserver:latest
+  - image: zenko/cloudserver:8.1.4
     name: setup
     imagePullPolicy: Always
     command: ["tar", "-xvf", "/static-config/mock-metadata.tar.gz", "-C", "/usr/src/app"]
