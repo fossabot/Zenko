@@ -31,6 +31,11 @@ health:
   path:
     liveness: /_/health/readiness
 
+kafka:
+  backlog_metrics:
+    path: "/backbeat/run/kafka-backlog-metrics"
+    interval: 60
+
 api:
   replicaCount: 1
   service:
@@ -100,9 +105,6 @@ lifecycle:
 
   zookeeper:
     path: "/lifecycle"
-    backlog_metrics:
-      path: "/lifecycle/run/backlog-metrics"
-      interval: 60
 
   rules:
     expiration:
