@@ -1,4 +1,3 @@
-# Install Zenko on Google Cloud Kubernetes Engine
 
 Zenko can be installed on a Kubernetes cluster managed on Google Cloud
 (GKE). Start a new cluster on Kubernetes following the instructions on
