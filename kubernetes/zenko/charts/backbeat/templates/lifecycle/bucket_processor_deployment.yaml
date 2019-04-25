@@ -15,6 +15,8 @@ spec:
       labels:
         app: {{ template "backbeat.name" . }}-lifecycle
         release: {{ .Release.Name }}
+      annotations:
+{{ toYaml .Values.monitoring.annotations | indent 8 }}
     spec:
       containers:
         - name: bucket-processor

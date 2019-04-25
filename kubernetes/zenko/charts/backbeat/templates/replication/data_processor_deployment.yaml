@@ -18,6 +18,8 @@ spec:
       labels:
         app: {{ template "backbeat.name" . }}-replication
         release: {{ .Release.Name }}
+      annotations:
+{{ toYaml .Values.monitoring.annotations | indent 8 }}
     spec:
       {{- if not .Values.global.orbit.enabled }}
       initContainers:
