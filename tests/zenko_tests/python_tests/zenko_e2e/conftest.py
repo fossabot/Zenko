@@ -1,5 +1,21 @@
+import logging
 import os
 import os.path
+
+class Blacklist(logging.Filter):
+	def __init__(self, *blacklist):
+		self.blacklist = [logging.Filter(name) for name in blacklist]
+
+	def filter(self, record):
+		return not any(f.filter(record) for f in self.blacklist)
+
+blacklist = [
+    'botocore.vendored.requests.packages.urllib3.connectionpool',
+    'azure.storage.common.storageclien'
+]
+
+for handler in logging.root.handlers:
+    handler.addFilter(Blacklist(*blacklist))
 
 import boto3
 
