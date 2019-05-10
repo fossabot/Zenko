@@ -85,6 +85,7 @@ zenko-queue:
     enabled: false
   rbac:
     enabled: false
+  kafkaHeapOptions: "-Xmx1G -Xms1G -Xss228k"
   resources:
     limits:
       cpu: 300m
