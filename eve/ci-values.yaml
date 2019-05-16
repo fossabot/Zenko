@@ -167,6 +167,8 @@ cloudserver:
 backbeat:
   image:
     pullPolicy: Always
+    repository: gcr.io/eve-prod/zenko/backbeat
+    tag: 499f960
   api:
     resources:
       limits:
