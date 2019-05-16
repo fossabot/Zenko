@@ -167,6 +167,8 @@ cloudserver:
 backbeat:
   image:
     pullPolicy: Always
+    repository: ssalaues/backbeat
+    tag: 9ae7290
   api:
     resources:
       limits:
