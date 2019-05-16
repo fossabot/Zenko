@@ -168,7 +168,7 @@ backbeat:
   image:
     pullPolicy: Always
     repository: gcr.io/eve-prod/zenko/backbeat
-    tag: 499f960
+    tag: 9ae7290
   api:
     resources:
       limits:
