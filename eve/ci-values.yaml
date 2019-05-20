@@ -79,7 +79,8 @@ cloudserver:
 backbeat:
   image:
     pullPolicy: Always
-    tag: 8.1.2
+    repository: ssalaues/backbeat
+    tag: 6aa195f
   replication:
     replicaFactor: 2
   lifecycle:
