@@ -79,7 +79,7 @@ cloudserver:
 backbeat:
   image:
     pullPolicy: Always
-    tag: 8.1.4
+    tag: 8.1.1
   replication:
     replicaFactor: 2
   lifecycle:
