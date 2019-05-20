@@ -1,24 +1,19 @@
 ingress:
   enabled: true
-
 maintenance:
-  # Both options are enabled to test templating
   enabled: true
   retryFailed:
-    schedule: "* 23 * * *"
+    schedule: '* 23 * * *'
   retryPending:
-    schedule: "* 23 * * *"
+    schedule: '* 23 * * *'
   debug:
     enabled: true
-
 s3-data:
   persistentVolume:
     enabled: false
-
 mongodb-replicaset:
   persistentVolume:
     enabled: false
-
 prometheus:
   rbac:
     create: false
@@ -41,17 +36,14 @@ prometheus:
   server:
     persistentVolume:
       enabled: false
-
 zenko-queue:
   persistence:
     enabled: false
   rbac:
     enabled: false
-
 zenko-quorum:
   persistence:
     enabled: false
-
 redis-ha:
   persistentVolume:
     enabled: false
@@ -60,13 +52,11 @@ redis-ha:
   serviceAccount:
     create: false
     name: default
-
 global:
   orbit:
-    endpoint: "http://ciutil-orbit-simulator:4222"
-    managerMode: "poll"
-    workerMode: "poll"
-
+    endpoint: http://ciutil-orbit-simulator:4222
+    managerMode: poll
+    workerMode: poll
 cloudserver:
   image:
     pullPolicy: Always
@@ -75,18 +65,16 @@ cloudserver:
   env:
     MPU_TESTING: 'yes'
     PUSH_STATS: 'false'
-
 backbeat:
   image:
     pullPolicy: Always
     repository: ssalaues/backbeat
-    tag: 6aa195f
+    tag: 742fc82
   replication:
     replicaFactor: 2
   lifecycle:
     conductor:
-      cronRule: "0 */1 * * * *"
-
+      cronRule: 0 */1 * * * *
 grafana:
   persistentVolume:
     enabled: false
