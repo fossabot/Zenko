@@ -73,7 +73,7 @@ users: {}
 
 logging:
    # Options: info, debug, trace
-   level: info
+   level: debug
 
 allowHealthchecksFrom: '0.0.0.0/0'
 

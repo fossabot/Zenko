@@ -167,6 +167,8 @@ cloudserver:
 backbeat:
   image:
     pullPolicy: Always
+    repository: jonathangramain/backbeat
+    tag: ZENKO-1826-1
   api:
     resources:
       limits:
