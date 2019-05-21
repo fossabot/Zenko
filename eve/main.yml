@@ -128,7 +128,7 @@ stages:
         haltOnFailure: true
         stage_names:
         - build-doc
-        - python-tests
+ #       - python-tests
         - node-tests-01
         - node-tests-02
 
