@@ -69,7 +69,7 @@ backbeat:
   image:
     pullPolicy: Always
     repository: ssalaues/backbeat
-    tag: ef70c10
+    tag: revert-ef70c10
   replication:
     replicaFactor: 2
   lifecycle:
