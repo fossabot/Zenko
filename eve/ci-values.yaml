@@ -168,7 +168,7 @@ backbeat:
   image:
     pullPolicy: Always
     repository: jonathangramain/backbeat
-    tag: ZENKO-1826-4
+    tag: ZENKO-1826-5
   api:
     resources:
       limits:
