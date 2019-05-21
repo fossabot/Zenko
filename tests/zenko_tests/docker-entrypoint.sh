@@ -26,7 +26,7 @@ if [ "$STAGE" = 'python-tests' ]; then
 elif [ "$STAGE" = 'node-tests-01' ]; then
     enter_and_run node_tests "npm_chain.sh test_aws_crr"
 elif [ "$STAGE" = 'node-tests-02' ]; then
-    enter_and_run node_tests "npm_chain.sh test_gcp_crr test_azure_crr test_one_to_many test_crr_pause_resume test_api test_location_quota test_bucket_get_v2"
+    enter_and_run node_tests "npm_chain.sh test_gcp_crr test_azure_crr test_one_to_many test_crr_pause_resume test_api test_bucket_get_v2"
 else
     enter_and_run python_tests "./run.sh $PYTHON_ARGS"
     # test_crr runs "test_aws_crr test_gcp_crr test_azure_crr test_one_to_many"
