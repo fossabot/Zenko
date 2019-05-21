@@ -69,7 +69,7 @@ backbeat:
   image:
     pullPolicy: Always
     repository: ssalaues/backbeat
-    tag: 8521c51
+    tag: d23adf5
   replication:
     replicaFactor: 2
   lifecycle:
