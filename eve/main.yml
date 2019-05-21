@@ -127,7 +127,7 @@ stages:
         name: trigger all the tests
         haltOnFailure: true
         stage_names:
-        - build-doc
+ #       - build-doc
  #       - python-tests
         - node-tests-01
         - node-tests-02
