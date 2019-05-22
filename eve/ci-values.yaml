@@ -168,7 +168,7 @@ backbeat:
   image:
     pullPolicy: Always
     repository: ssalaues/backbeat
-    tag: revert-32c2ba5
+    tag: f751e24
   api:
     resources:
       limits:
