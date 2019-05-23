@@ -167,6 +167,8 @@ cloudserver:
 backbeat:
   image:
     pullPolicy: Always
+    repository: ssalaues/backbeat
+    tag: lz4
   api:
     resources:
       limits:
