@@ -196,6 +196,7 @@ zenko-queue:
     "auto.create.topics.enable": false    # - enable auto creation of topic on the server
     "min.insync.replicas": 2              # - min number of replicas that must acknowledge a write
     "message.max.bytes": "5000000"        # - the largest record batch size allowed
+    "compression.type": "lz4"             # - Specifies the final compression type for a given topic
   prometheus:
     jmx:
       enabled: true
