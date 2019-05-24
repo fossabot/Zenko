@@ -1,7 +1,7 @@
 version: "0.2"
 
 branches:
-  documentation/*, feature/*, improvement/*, bugfix/*, w/*, q/*, hotfix/*:
+  test/*, documentation/*, feature/*, improvement/*, bugfix/*, w/*, q/*, hotfix/*:
     stage: pre-merge
 
 models:
@@ -195,9 +195,9 @@ stages:
         stage_names:
         - build-doc
         - test-cosmos
-        - python-tests
+#        - python-tests
         - node-tests-01
-        - node-tests-02
+#        - node-tests-02
 
   build-doc:
     worker:
