@@ -100,13 +100,6 @@ RING_S3C_INGESTION_SRC_BUCKET_NAME = get_env('RING_S3C_INGESTION_SRC_BUCKET_NAME
 RING_S3C_ENDPOINT = get_env('RING_S3C_ENDPOINT')
 buckets = [
     get_env('AWS_CRR_SRC_BUCKET_NAME', 'zenko-aws-crr-src-bucket'),
-    get_env('GCP_CRR_SRC_BUCKET_NAME', 'zenko-gcp-crr-src-bucket'),
-    get_env('AZURE_CRR_SRC_BUCKET_NAME', 'zenko-azure-crr-src-bucket'),
-    get_env('WASABI_CRR_SRC_BUCKET_NAME', 'zenko-wasabi-crr-src-bucket'),
-    get_env('DO_CRR_SRC_BUCKET_NAME', 'zenko-do-crr-src-bucket'),
-    get_env('MULTI_CRR_SRC_BUCKET_NAME', 'zenko-multi-crr-src-bucket'),
-    get_env('TRANSIENT_SRC_BUCKET_NAME', 'ci-zenko-transient-src-bucket'),
-    get_env('CEPH_CRR_SRC_BUCKET_NAME', 'ci-zenko-ceph-crr-src-bucket')
 ]
 
 if get_env('S3_FUZZER') is not None:
@@ -129,9 +122,9 @@ ring_s3c_client = s3c.resource('s3', endpoint_url=RING_S3C_ENDPOINT,
 # Create buckets
 
 ## Creating S3C buckets
-_log.info('Creating S3C buckets...')
-bucket_safe_create(ring_s3c_client.Bucket(RING_S3C_INGESTION_SRC_BUCKET_NAME))
-ring_s3c_client.Bucket(RING_S3C_INGESTION_SRC_BUCKET_NAME).Versioning().enable()
+#_log.info('Creating S3C buckets...')
+#bucket_safe_create(ring_s3c_client.Bucket(RING_S3C_INGESTION_SRC_BUCKET_NAME))
+#ring_s3c_client.Bucket(RING_S3C_INGESTION_SRC_BUCKET_NAME).Versioning().enable()
 
 ## Creating Zenko buckets
 _log.info('Creating testing buckets...')
