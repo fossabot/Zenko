@@ -16,7 +16,7 @@ Learn more at  [Zenko.io](http://www.zenko.io/).
 ## [Full Documentation](http://zenko.readthedocs.io)
 
 ## Contributing
-
+To see the roadmap for current or future releases go to [Zenko Jira Project](https://scality.atlassian.net/projects/ZENKOIO/issues/ZENKOIO-19?filter=allopenissues). Leave your comments and suggestions on the [forum](https://forum.zenko.io/) or create an issue in this repository.
 If you'd like to contribute, please review the
 [Contributing Guidelines](https://github.com/scality/Guidelines/blob/master/CONTRIBUTING.md).
 
