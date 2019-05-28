@@ -1,7 +1,7 @@
 version: "0.2"
 
 branches:
-  documentation/*, feature/*, improvement/*, bugfix/*, w/*, q/*, hotfix/*:
+  test/*, documentation/*, feature/*, improvement/*, bugfix/*, w/*, q/*, hotfix/*:
     stage: pre-merge
 
 models:
