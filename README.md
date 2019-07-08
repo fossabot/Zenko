@@ -1,6 +1,7 @@
 # Zenko
 
 ![Zenko logo](res/zenko.io-logo-wide-bw.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdashagurova%2FZenko.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdashagurova%2FZenko?ref=badge_shield)
 
 Zenko is  [Scality](http://www.scality.com/)’s open source multi-cloud data
 controller.
@@ -56,3 +57,7 @@ Simple Zenko setup for quick testing with non-production data:
 [Deploying a HA Kubernetes cluster](https://github.com/scality/metal-k8s)
 
 [Zenko Docker Swarm HA Deployment](./swarm-production)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdashagurova%2FZenko.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdashagurova%2FZenko?ref=badge_large)
